@@ -58,7 +58,7 @@ export class News extends Component {
                     return <div className="col-md-4 my-2" key={element.url}>
                     <NewsItem title={element.title} description={element.description == null ?"": element.description.slice(0, 100)+".."} imageurl={element.urlToImage==null ? "https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmV3c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60": element.urlToImage}  newsUrl={element.url}/>
                     </div>
-                })}
+                })} 
                 </div>
                 <div className="container d-flex justify-content-center">
                 <button disabled={this.state.page <= 1 ? true : false} type="button" class="btn btn-dark mx-1" onClick={this.handlepreviousClick}>&larr; previous </button>
