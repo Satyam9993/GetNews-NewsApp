@@ -41,7 +41,7 @@ export class News extends Component {
             page: this.state.page-1
         })
     }
-
+    // comment
     render() {
         return (
             <div>
